@@ -6,6 +6,7 @@ body {
     background-position: center;
     background-attachment: fixed; /* 滚动时背景固定 */
     min-height: 100vh;
+ height: 100vh;
 
   text-align: center;
     font-family: Arial, sans-serif;
@@ -19,7 +20,7 @@ body {
 
 margin: 0;
             padding: 0;
-            height: 2000px; /* 让页面有滚动条 */
+            /* 让页面有滚动条 */
             overflow: hidden; /* 防止页面滚动 */
 
 }
