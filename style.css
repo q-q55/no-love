@@ -6,25 +6,24 @@ body {
     background-position: center;
     background-attachment: fixed; /* 滚动时背景固定 */
     min-height: 100vh;
+
+  text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
 margin: 0;
             padding: 0;
             height: 2000px; /* 让页面有滚动条 */
             overflow: hidden; /* 防止页面滚动 */
 
 }
- .floating-box {
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            line-height: 100px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
+
 .container {
   
     width: 90%; /* 适应手机屏幕宽度 */
@@ -63,7 +62,18 @@ button {
     color: white;
     position: relative;
 }
-
+ .floating-box {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
 .yes-screen {
     position: fixed;
     top: 0;

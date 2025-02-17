@@ -2,7 +2,7 @@ let yesButton = document.getElementById("yes");
 let noButton = document.getElementById("no");
 let questionText = document.getElementById("question");
 let mainImage = document.getElementById("mainImage");
-
+let qq = 0;
 let clickCount = 0;  // 记录点击 No 的次数
 
 // No 按钮的文字变化
@@ -22,7 +22,7 @@ noButton.addEventListener("click", function() {
     if (clickCount <= 5) {
         noButton.innerText = noTexts[clickCount - 1];
     }
-
+    if(qq>0){qq--;questionText.innerText = "财运+"+qq;}
     // 图片变化（前 5 次变化）
     if (clickCount === 1) mainImage.src = "./images/shocked.png"; // 震惊
     if (clickCount === 2) mainImage.src = "./images/think.png";   // 思考
@@ -33,3 +33,8 @@ noButton.addEventListener("click", function() {
 });
 
 // Yes 按钮点击后，进入表白成功页面
+yesButton.addEventListener("click", function() {
+	qq++;
+      questionText.innerText = "财运+"+qq;
+	mainImage.src = "./images/heart.png";
+});
