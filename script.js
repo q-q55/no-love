@@ -37,6 +37,8 @@ yesButton.addEventListener("click", function() {
 	qq++;
       questionText.innerText = "财运+"+qq;
 	mainImage.src = "./images/heart.png";
+	noButton.innerText = "爱你";
 
 });
+
 
