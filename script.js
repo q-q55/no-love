@@ -16,7 +16,7 @@ const noTexts = [
 
 // No 按钮点击事件
 noButton.addEventListener("click", function() {
-    clickCount++;
+   // clickCount++;
 
        // No 文案变化（前 5 次变化）
     if (clickCount >= 0) {
@@ -29,7 +29,7 @@ noButton.addEventListener("click", function() {
     if (clickCount === 2) mainImage.src = "./images/angry.png";   // 生气
     if (clickCount === 3) mainImage.src = "./images/crying.png";  // 哭
     if (clickCount >= 4) mainImage.src = "./images/crying.png";  // 之后一直是哭
-
+	clickCount++;
 });
 
 // Yes 按钮点击后，进入表白成功页面
@@ -39,3 +39,4 @@ yesButton.addEventListener("click", function() {
 	mainImage.src = "./images/heart.png";
 
 });
+
