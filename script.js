@@ -19,16 +19,16 @@ noButton.addEventListener("click", function() {
     clickCount++;
 
        // No 文案变化（前 5 次变化）
-    if (clickCount <= 5) {
-        noButton.innerText = noTexts[clickCount - 1];
+    if (clickCount >= 0) {
+        noButton.innerText = noTexts[clickCount%5];
     }
     if(qq>0){qq--;questionText.innerText = "财运+"+qq;}
     // 图片变化（前 5 次变化）
-    if (clickCount === 1) mainImage.src = "./images/shocked.png"; // 震惊
-    if (clickCount === 2) mainImage.src = "./images/think.png";   // 思考
-    if (clickCount === 3) mainImage.src = "./images/angry.png";   // 生气
-    if (clickCount === 4) mainImage.src = "./images/crying.png";  // 哭
-    if (clickCount >= 5) mainImage.src = "./images/crying.png";  // 之后一直是哭
+    if (clickCount === 0) mainImage.src = "./images/shocked.png"; // 震惊
+    if (clickCount === 1) mainImage.src = "./images/think.png";   // 思考
+    if (clickCount === 2) mainImage.src = "./images/angry.png";   // 生气
+    if (clickCount === 3) mainImage.src = "./images/crying.png";  // 哭
+    if (clickCount >= 4) mainImage.src = "./images/crying.png";  // 之后一直是哭
 
 });
 
@@ -37,4 +37,5 @@ yesButton.addEventListener("click", function() {
 	qq++;
       questionText.innerText = "财运+"+qq;
 	mainImage.src = "./images/heart.png";
+
 });
