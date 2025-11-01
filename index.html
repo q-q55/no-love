@@ -5,6 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>想发财吗？</title>
+        <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            box-sizing: border-box;
+            background: #f5f5f5;
+        }
+        
+        .tip-window {
+            position: absolute;
+            padding: 10px 15px;
+            border-radius: 4px;
+            font-family: "微软雅黑", sans-serif;
+            font-size: 14px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            pointer-events: none;
+            transition: opacity 0.5s ease-out;
+        }
+    </style>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -15,15 +35,17 @@
             <button id="no">不想</button>
         </div>
     </div>
-
-   <div class="floating-box">
+    <div class="floating-box">
             <button id="yes">超想</button>
-   </div>
+        </div>
+    <!-- <button id="startBtn">点击显示心形提示</button> -->
 
+    <script src="heart.js"></script>
+    <script src="./heard.js"></script>
+    <script src="./floating.js"></script>
+    <script src="./script.js"></script>
+    <script src="./sakuraPlus.js"></script>
 
-<script src="./floating.js"></script>
- <script src="./script.js"></script>
-<script src="./sakuraPlus.js"></script>
 
 </body>
 </html>
