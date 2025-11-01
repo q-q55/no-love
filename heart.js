@@ -11,7 +11,7 @@ const config = {
     windowW: 120,        // 窗口宽度
     windowH: 60,         // 窗口高度
     delay: 120,          // 窗口显示间隔（毫秒）
-    duration: 5000       // 窗口显示时长（毫秒）
+    duration: 10000       // 窗口显示时长（毫秒）
 };
 
 // 生成心形坐标
@@ -98,4 +98,5 @@ function startHeartAnimation() {
 // 页面加载完成后绑定按钮事件
 window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('yes').addEventListener('click', startHeartAnimation);
+
 });
